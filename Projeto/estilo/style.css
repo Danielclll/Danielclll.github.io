@@ -1,0 +1,155 @@
+@charset "UTF_8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --cor1: #74121D;
+    --cor2: #FE5F55;
+    --cor3: #FFDAB9;
+    --cor4: rgb(255, 39, 39);
+
+    --font-destaque: 'Anton', serif;
+    --font-padrão: 'Merriweather', Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    background: var(--cor1) url('../imagens/lanchonete.webp') no-repeat fixed;
+    background-size: cover;
+    background-position: right center;
+}
+
+header {
+    background-color: var(--cor3);
+    text-align: center;
+    height: 100px;
+    margin: auto;
+    height: 200px;
+    position: relative;
+    min-width: 400px;
+    max-width: 1000px;
+    padding: 10px;
+}
+
+div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div h1 {
+    color: var(--cor1);
+    font-family: var(--font-padrão);
+    margin-bottom: 10px;
+}
+
+div p {
+    color: var(--cor1);
+    font-family: var(--font-destaque);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: var(--cor1);
+    margin: auto;
+    max-width: 1000px;
+    min-width: 400px;
+    padding: 10px;
+}
+
+main h2 {
+    color: var(--cor3);
+    font-family: var(--font-padrão);
+    margin: 30px 30px 30px 0px;
+    text-align: center;
+}
+
+main h3 {
+    color: #c52739;
+    font-family: var(--font-destaque);
+    margin: 10px;
+    font-size: 25px;
+}
+
+main p {
+    color: rgb(255, 163, 163);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 20px;
+}
+
+main li {
+    color: rgb(255, 163, 163);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.artigo > p {
+    margin: 20px;
+}
+
+aside {
+    background-color: var(--cor3);
+    max-width: 1000px;
+    min-width: 400px;
+    height: 400px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+}
+
+aside h3 {
+    color: var(--cor1);
+    font-family: var(--font-padrão);
+    margin: 10px;
+    text-align: center;
+}
+
+#complemento2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    max-width: 450px;
+    min-width: 450px;
+}
+
+footer {
+    background-color: var(--cor1);
+    max-width: 1000px;
+    min-width: 400px;
+    height: 30px;
+    margin: auto;
+    padding: 10px;
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lanche {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
