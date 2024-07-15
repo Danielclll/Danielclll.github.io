@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --font-padrão: 'oswald', Arial, Verdana, serif;
+    --font-destaque: 'josefin sans', Arial, Verdana, serif;
+    --font-destaque2: 'fira sans';
+
+    --cor1: #034C8C;
+    --cor2: #03588C;
+    --cor3: #0378A6;
+    --cor4: #A7E4F2;
+    --cor5: #96D2D9;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor2);
+    font-family: var(--font-padrão);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor2));
+    text-align: center;
+    min-height: 160px;
+    position: relative;
+    padding: 10px;
+}
+
+header > h1, header > p {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+header > h1 {
+    min-width: 400px;
+    font-family: var(--font-destaque);
+}
+
+header > p {
+    margin-top: 60px;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.block1 {
+    background-color: var(--cor3);
+    font-size: 13px;
+    font-weight: lighter;
+    margin: auto;
+    height: 400px;
+    max-width: 1300px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.block1 > h2 {
+    text-align: center;
+    color: var(--cor4);
+    font-size: 2em;
+    font-family: var(--font-destaque);
+    margin-top: 20px;
+}
+
+.block1 > p {
+    text-align: center;
+    color: var(--cor4);
+    font-size: 1.5em;
+    font-family: var(--font-padrão);
+    font-weight: bold;
+}
+
+.video {
+    width: 450px;
+    height: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#artigo {
+    background-color: var(--cor4);
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 0px;
+    height: 900px;
+    max-width: 1300px;
+    min-width: 400px;
+    padding: 30px;
+    
+}
+
+.block2 {
+    text-align: center;
+    font-family: var(--font-padrão);    
+    padding: 30px;
+    max-width: 1200px;
+    min-width: 400px;
+    height: 710px;
+}
+
+.block2 > h2 {
+    font-family: var(--font-destaque);
+    color: var(--cor2);
+}
+
+.block2 > p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: var(--cor2);
+}
+
+.imagem1 {
+    margin-top: 10px;
+}
+
+.imagem2 {
+    margin-top: 30px;
+}
+
+.extra1 {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.extra1 > h3 {
+    margin-bottom: 20px;
+    font-family: var(--font-destaque);
+    font-size: 24px;
+}
+
+.extra1 img {
+    width: 400px;
+    margin-top: 30px;
+}
+
+.extra2 {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor2));
+    text-align: center;
+    padding: 10px;
+}
+
+.extra2 > h3 {
+    font-family: var(--font-destaque);
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.extra2 > h3, .extra2 > p{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.extra2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.extra2 a:hover {
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--cor2);
+    text-align: center;
+    color: var(--cor4);
+}
